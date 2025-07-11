@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary Objectives 2025-2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for body, Oswald for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Default for body text */
+            background-color: rgb(45, 49, 66); /* Dark blue-gray background */
+            color: #e2e8f0; /* Light text color for general content */
+        }
+        .container {
+            max-width: 900px; /* Max width for content */
+        }
+        .section-card {
+            background-color: rgb(55, 60, 75); /* Slightly lighter dark background for main cards */
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for contrast */
+            transition: transform 0.3s ease-in-out;
+        }
+        .section-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+        .priority-high {
+            color: #ef4444; /* Red for high priority */
+            font-weight: 600;
+        }
+        .priority-medium {
+            color: #f97316; /* Orange for medium priority */
+            font-weight: 600;
+        }
+        .horizon-short {
+            color: #22c55e; /* Green for short term */
+            font-weight: 500;
+        }
+        .horizon-mid {
+            color: #0ea5e9; /* Blue for mid term */
+            font-weight: 500;
+        }
+        .nav-button {
+            background-color: #6366f1; /* Indigo button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Pill shape */
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .nav-button:hover {
+            background-color: #4f46e5; /* Darker indigo on hover */
+        }
+        /* Style for the consistent header on content slides */
+        .slide-header {
+            font-family: 'Oswald', sans-serif; /* Oswald for this header */
+            text-align: center;
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 600; /* Adjusted to semi-bold */
+            color: #f8fafc; /* White text color for header */
+            margin-bottom: 1.5rem; /* mb-6 */
+            padding-bottom: 0.75rem; /* pb-3 */
+            border-bottom: 1px solid rgba(226, 232, 240, 0.2); /* Lighter, semi-transparent border */
+            text-transform: uppercase; /* All caps */
+        }
+        /* Specific styles for text within cards to ensure readability and font weight */
+        .section-card h2 {
+            font-family: 'Oswald', sans-serif; /* Oswald for main section titles */
+            color: #f8fafc; /* White text for main headings within cards */
+            font-weight: 600; /* Adjusted to semi-bold */
+            text-transform: uppercase; /* All caps */
+        }
+        /* Centered h3 headings within content boxes with lighter weight */
+        .section-card h3 {
+            font-family: 'Oswald', sans-serif; /* Oswald for sub-headings */
+            color: #f8fafc; /* White text for sub-headings within cards */
+            text-align: center; /* Centered alignment for h3 headings */
+            font-weight: 500; /* Adjusted to medium */
+            text-transform: uppercase; /* All caps */
+        }
+        /* Left-align bullet points and general text within cards */
+        .section-card p {
+            color: #e2e8f0; /* Light gray text for paragraphs within cards */
+            text-align: left; /* Explicitly left-align paragraphs */
+        }
+        .section-card ul {
+            color: #e2e8f0; /* Light gray text for list content within cards */
+            list-style-position: outside; /* Ensure bullets are outside, allowing text to wrap cleanly */
+            padding-left: 1.5rem; /* Add padding for the bullet to sit in */
+        }
+        .section-card ul li {
+            text-align: left; /* Explicitly left-align list items */
+        }
+        /* New style for the individual content boxes within cards */
+        .content-box {
+            background-color: rgb(70, 75, 95); /* Distinct, slightly lighter dark gray for individual boxes */
+            border-radius: 1rem; /* Rounded corners for inner boxes */
+            border: 1px solid rgb(75, 80, 100); /* Slightly lighter border for inner boxes */
+            padding: 1.5rem; /* Consistent padding */
+        }
+        /* Title slide specific text */
+        #title-section h1 {
+            font-family: 'Oswald', sans-serif; /* Oswald for the main title on the first slide */
+            font-weight: 700; /* Adjusted to bold */
+            text-transform: uppercase; /* All caps */
+        }
+        #title-section p {
+            font-family: 'Oswald', sans-serif; /* Oswald for the subtitle on the first slide */
+            font-weight: 400; /* Adjusted to normal */
+            text-transform: uppercase; /* All caps */
+        }
+    </style>
+</head>
+<body class="p-6 flex flex-col items-center min-h-screen">
+    <!-- Title Slide -->
+    <div id="title-section" class="container mx-auto p-0 bg-white rounded-3xl shadow-xl mb-8 flex flex-col items-center overflow-hidden">
+        <!-- Image container with overlay for text -->
+        <div class="relative w-full h-96 rounded-3xl overflow-hidden">
+            <img src="https://whisperlakenc.com/images/OnTheLake/WL_HomePage_BGImage_Lake.jpg"
+                 alt="Whisper Lake Community"
+                 class="w-full h-full object-cover">
+            <!-- Overlay text for title and subtitle -->
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-white p-4 bg-black bg-opacity-40 rounded-3xl">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-center mb-2 tracking-tight drop-shadow-lg">Whisper Lake Primary Objectives</h1>
+                <p class="text-2xl md:text-3xl text-center font-medium drop-shadow-lg">2025 - 2026</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="presentation-container" class="w-full flex flex-col items-center">
+        <!-- Governance & Board Operations -->
+        <div id="governance-section" class="section-card p-8 mb-8 w-full hidden">
+            <div class="slide-header">Primary Objectives 2025-2026</div>
+            <h2 class="text-4xl font-bold text-center mb-6">Governance & Board Operations</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex justify-center">
+                <!-- POA-Owned Email Addresses -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">POA-Owned Email Addresses</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-short">Horizon: Short Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Establish official POA-owned email accounts for board and committee members.</li>
+                        <li>Improve security and protect resident data.</li>
+                        <li>Create consistent, centralized communication channels.</li>
+                        <li>Support transparency and proper record-keeping.</li>
+                    </ul>
+                </div>
+
+                <!-- Regular Board Meeting Cadence -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Regular Board Meeting Cadence</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-short">Horizon: Short Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Set and maintain a predictable meeting schedule to improve engagement and efficiency.</li>
+                        <li>Encourage greater participation and accountability.</li>
+                        <li>Support strategic planning and timely follow-up.</li>
+                        <li>Provide consistency for board members and residents.</li>
+                    </ul>
+                </div>
+
+                <!-- Bylaws & Covenants Modernization -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Bylaws & Covenants Modernization</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-mid">Horizon: Mid Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Update and simplify governing documents to meet current and future needs.</li>
+                        <li>Remove outdated language and clarify requirements.</li>
+                        <li>Ensure legal compliance and alignment with best practices.</li>
+                        <li>Promote transparency and strengthen governance.</li>
+                        <li>Consider formalizing the Infrastructure Committee’s essential role during governing document updates.</li>
+                    </ul>
+                </div>
+
+                <!-- Owner Visibility & Board Roadmap -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Owner Visibility & Board Roadmap</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-short">Horizon: Short Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Establish a transparent, always-accessible roadmap for owners to see board initiatives and future plans.</li>
+                        <li>Provide real-time visibility into what the board is working on and planning.</li>
+                        <li>Reduce unnecessary questions, speculation, and misinformation.</li>
+                        <li>Empower residents to stay informed and engaged without needing constant direct outreach.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Spaces & Amenities -->
+        <div id="community-section" class="section-card p-8 mb-8 w-full hidden">
+            <div class="slide-header">Primary Objectives 2025-2026</div>
+            <h2 class="text-4xl font-bold text-center mb-6">Community Spaces & Amenities</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex justify-center">
+                <!-- Reinstate Amenities Committee -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Reinstate Amenities Committee</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-short">Horizon: Short Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Reestablish a dedicated committee to oversee community spaces and shared resources.</li>
+                        <li>Ensure responsibilities are clearly defined and intentionally managed.</li>
+                        <li>Provide structured oversight to maintain and enhance shared spaces.</li>
+                    </ul>
+                </div>
+
+                <!-- Reinstate Watercraft Registration -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Reinstate Watercraft Registration</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-short">Horizon: Short Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Bring back a formal watercraft registration process to restore order and fairness.</li>
+                        <li>To be managed by the reinstated Amenities Committee.</li>
+                        <li>Prevent unregulated usage and protect shared amenities.</li>
+                        <li>Enable accurate tracking and potential expansion of rack capacity.</li>
+                        <li>Re-establish a known system while planning for future updates.</li>
+                    </ul>
+                </div>
+
+                <!-- Lakefront Project Review & Planning -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Lakefront Project Review & Planning</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-mid">Horizon: Mid Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Revisit the current state of the lakefront to guide future improvements.</li>
+                        <li>Evaluate what’s working, what isn’t, and identify resident priorities.</li>
+                        <li>Address liability, usability, and cost concerns raised by the community.</li>
+                        <li>Develop a phased plan focused on accessibility, safety, and value.</li>
+                    </ul>
+                </div>
+
+                <!-- Lakefront Gathering Space (Level Pad) -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Lakefront Gathering Space (Level Pad)</h3>
+                    <p class="mb-2">
+                        <span class="priority-medium">Priority: Medium</span> | <span class="horizon-mid">Horizon: Mid Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Create a sturdy, level gathering area at the lakefront without immediate overhead cover.</li>
+                        <li>Offer an accessible, safe space for flexible community use.</li>
+                        <li>Enable future additions (like a cover) based on community feedback and need.</li>
+                        <li>Encourage outdoor engagement and enhance lakefront enjoyment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Safety & Land Use -->
+        <div id="safety-section" class="section-card p-8 mb-8 w-full hidden">
+            <div class="slide-header">Primary Objectives 2025-2026</div>
+            <h2 class="text-4xl font-bold text-center mb-6">Safety & Land Use</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex justify-center">
+                <!-- Speeding & Road Safety -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Speeding & Road Safety</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-short">Horizon: Short Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Improve road safety and reduce speeding to protect residents and visitors.</li>
+                        <li>Upgrade signage, markings, and potential traffic-calming measures.</li>
+                        <li>Explore enforcement and community awareness initiatives.</li>
+                        <li>Support a safer, more welcoming environment for all.</li>
+                    </ul>
+                </div>
+
+                <!-- Conservation-Focused Land Use Guidelines -->
+                <div class="content-box">
+                    <h3 class="text-2xl font-semibold mb-3">Conservation-Focused Land Use Guidelines</h3>
+                    <p class="mb-2">
+                        <span class="priority-high">Priority: High</span> | <span class="horizon-mid">Horizon: Mid Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Develop land use guidelines that prioritize environmental stewardship.</li>
+                        <li>Protect natural spaces and maintain community character.</li>
+                        <li>Support sustainable development practices.</li>
+                        <li>Work collaboratively with experts and residents to shape future growth.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategic Planning -->
+        <div id="strategic-section" class="section-card p-8 mb-8 w-full hidden">
+            <div class="slide-header">Primary Objectives 2025-2026</div>
+            <h2 class="text-4xl font-bold text-center mb-6">Strategic Planning</h2>
+
+            <!-- Use flexbox for centering a single item and control its width -->
+            <div class="flex justify-center w-full">
+                <!-- Strategic Planning Committee Framework -->
+                <div class="content-box w-full md:max-w-2xl">
+                    <h3 class="text-2xl font-semibold mb-3">Strategic Planning Committee Framework</h3>
+                    <p class="mb-2">
+                        <span class="priority-medium">Priority: Medium</span> | <span class="horizon-mid">Horizon: Mid Term</span>
+                    </p>
+                    <ul class="list-disc space-y-1">
+                        <li>Establish a framework for long-term community planning and prioritization.</li>
+                        <li>Align goals across infrastructure, amenities, governance, and finance.</li>
+                        <li>Improve resource allocation and strengthen decision-making.</li>
+                        <li>Enable proactive adaptation to future needs and resident input.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex space-x-4 mt-8">
+        <button id="prev-button" class="nav-button opacity-50 cursor-not-allowed" disabled>Previous</button>
+        <button id="next-button" class="nav-button">Next</button>
+    </div>
+
+    <script>
+        const sections = [
+            'title-section', // Added title-section to the array
+            'governance-section',
+            'community-section',
+            'safety-section',
+            'strategic-section'
+        ];
+        let currentSectionIndex = 0;
+
+        const presentationContainer = document.getElementById('presentation-container');
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
+
+        // Function to show a specific section
+        function showSection(index) {
+            sections.forEach((sectionId, i) => {
+                const sectionElement = document.getElementById(sectionId);
+                if (sectionElement) {
+                    // The title-section is handled slightly differently:
+                    // It's always visible initially, but then hidden when navigating to other sections.
+                    // When navigating back to index 0, it becomes visible again.
+                    if (sectionId === 'title-section') {
+                        if (i === index) {
+                            sectionElement.classList.remove('hidden');
+                            presentationContainer.classList.add('hidden'); // Hide the main content container
+                        } else {
+                            sectionElement.classList.add('hidden');
+                            presentationContainer.classList.remove('hidden'); // Show the main content container
+                        }
+                    } else {
+                        // For other sections, show/hide as before
+                        if (i === index) {
+                            sectionElement.classList.remove('hidden');
+                        } else {
+                            sectionElement.classList.add('hidden');
+                        }
+                    }
+                }
+            });
+            updateNavigationButtons();
+        }
+
+        // Function to update the state of navigation buttons
+        function updateNavigationButtons() {
+            if (currentSectionIndex === 0) {
+                prevButton.disabled = true;
+                prevButton.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                prevButton.disabled = false;
+                prevButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+
+            if (currentSectionIndex === sections.length - 1) {
+                nextButton.disabled = true;
+                nextButton.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                nextButton.disabled = false;
+                nextButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        }
+
+        // Event listener for the "Next" button
+        nextButton.addEventListener('click', () => {
+            if (currentSectionIndex < sections.length - 1) {
+                currentSectionIndex++;
+                showSection(currentSectionIndex);
+            }
+        });
+
+        // Event listener for the "Previous" button
+        prevButton.addEventListener('click', () => {
+            if (currentSectionIndex > 0) {
+                currentSectionIndex--;
+                showSection(currentSectionIndex);
+            }
+        });
+
+        // Initialize the presentation by showing the first section
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection(currentSectionIndex);
+        });
+    </script>
+</body>
+</html>
